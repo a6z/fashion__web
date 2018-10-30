@@ -1,0 +1,32 @@
+@mixin title-eff1($text)
+	&:before
+		content: $text
+		display: block
+		position: absolute
+		+wh(100%, 100%)
+		color: rgba(0,0,0,.3)
+		height: 21px
+		overflow: hidden
+		z-index: -1
+		@content
+	
+@mixin title-eff2($text)	
+	&:after
+		content: $text
+		display: block
+		position: absolute
+		+wh(100%, 100%)
+		color: rgba(0,0,0,.1)
+		height: 14px
+		overflow: hidden
+		z-index: -1
+		@content
+
+@mixin wh ($w,$h)
+	width: $w
+	height: $h
+
+@mixin bgi ($url)
+	background-image: url($url)
+	background-size: cover
+	background-position: center

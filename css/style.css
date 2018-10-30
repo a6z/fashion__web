@@ -1,0 +1,501 @@
+* {
+  font-family: 'Roboto'; }
+
+/*---global-styles---*/
+.pattern {
+  position: absolute;
+  background-image: url("https://hexschool.github.io/THE_F2E_Design/week4-product%20gallery/assets/pattern%20unit.png"); }
+
+.block-s {
+  position: absolute;
+  background-color: #50E3C2;
+  z-index: -1; }
+
+.block {
+  position: absolute;
+  border: 20px solid #50E3C2;
+  box-sizing: border-box;
+  z-index: -1; }
+
+.subtitle {
+  position: absolute;
+  font-size: 48px;
+  color: #000;
+  text-align: center;
+  line-height: 48px;
+  font-weight: 900; }
+
+.num {
+  position: absolute;
+  font-size: 48px;
+  color: #000;
+  text-align: center;
+  line-height: 48px;
+  font-weight: 900;
+  width: 56px;
+  height: 48px; }
+
+.mens-title {
+  position: absolute;
+  font-size: 24px;
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  font-style: italic; }
+
+/*---styles---*/
+body {
+  margin: 0;
+  padding: 32px;
+  justify-content: center; }
+
+.wrapper {
+  display: grid;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  height: 2000px;
+  grid-template-columns: repeat(8, 120px);
+  grid-template-rows: repeat(20, 1fr); }
+
+.cata-title {
+  width: 131px;
+  height: 27px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 27px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 900;
+  grid-column-start: 5;
+  transform: translateX(-50%); }
+
+.big-title {
+  width: 420px;
+  height: 85px;
+  position: absolute;
+  color: #000;
+  font-size: 72px;
+  font-weight: 900;
+  white-space: nowrap;
+  grid-column-start: 5;
+  grid-row-start: 1;
+  transform: translateX(-50%);
+  top: 32px; }
+
+.item1 {
+  grid-area: 2 / 1 / span 6 / span 5;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 120px);
+  grid-template-rows: repeat(6, 1fr); }
+  .item1 .pic {
+    grid-area: 2 / 1 / span 4 / span 4;
+    background-image: url("https://images.unsplash.com/photo-1513827379601-9dba5099a3f9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1acdd78f34ee75aade9e313251bb1695&auto=format&fit=crop&w=934&q=80");
+    background-size: cover;
+    background-position: center; }
+  .item1 .block {
+    grid-area: 1 / 3 /span 3 /span 3;
+    width: 240px;
+    height: 200px;
+    justify-self: center;
+    align-self: center; }
+  .item1 .pattern {
+    width: 240px;
+    height: 100px;
+    grid-area: span 2 / 1 / -1 / span 3;
+    justify-self: center;
+    align-self: center; }
+  .item1 .subtitle {
+    width: 325px;
+    height: 48px;
+    grid-area: 2 / 1 /span 1 /span 3;
+    margin-top: -14px; }
+    .item1 .subtitle:before {
+      content: "LINEN BLAZER";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: rgba(0, 0, 0, 0.3);
+      height: 21px;
+      overflow: hidden;
+      z-index: -1;
+      top: -16px; }
+    .item1 .subtitle:after {
+      content: "LINEN BLAZER";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: rgba(0, 0, 0, 0.1);
+      height: 14px;
+      overflow: hidden;
+      z-index: -1;
+      top: -25px; }
+  .item1 .num {
+    grid-area: -2 / 1 /span 1 /span 1; }
+  .item1 .mens-title {
+    width: 123px;
+    height: 28px;
+    grid-area: span 1 / -2 / -3 /span 1;
+    align-self: end;
+    transform-origin: 0 100%;
+    transform: rotate(-270deg); }
+
+.item2 {
+  grid-area: 3 / 5 / span 4 / span 4;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  grid-template-rows: repeat(4, 1fr); }
+  .item2 .pic {
+    grid-area: 2 / 2 / span 2 / span 2;
+    background-image: url("https://images.unsplash.com/photo-1514632542677-48fae74a01b2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cf412aceb1d689765e387d30fca7210a&auto=format&fit=crop&w=934&q=80");
+    background-size: cover;
+    background-position: center; }
+  .item2 .block {
+    width: 240px;
+    height: 200px;
+    grid-area: 1 / 3 / span 2 / span 2; }
+  .item2 .block-s {
+    width: 240px;
+    height: 200px;
+    grid-area: 1 / 2 / span 3 / span 3;
+    justify-self: center;
+    align-self: center; }
+  .item2 .subtitle {
+    width: 210px;
+    height: 48px;
+    grid-area: 4 / 3 / 5 / 5;
+    align-self: center; }
+    .item2 .subtitle:before {
+      content: "FREELIFT";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: rgba(0, 0, 0, 0.3);
+      height: 21px;
+      overflow: hidden;
+      z-index: -1;
+      top: -18px; }
+    .item2 .subtitle:after {
+      content: "FREELIFT";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: rgba(0, 0, 0, 0.1);
+      height: 14px;
+      overflow: hidden;
+      z-index: -1;
+      top: -29px; }
+  .item2 .num {
+    grid-area: 1 / span 1 / span 1 / -1;
+    justify-self: end; }
+  .item2 .mens-title {
+    width: 135px;
+    height: 28px;
+    text-align: right;
+    grid-area: 1 / 1 / span 1 / span 2;
+    justify-self: end;
+    align-self: end; }
+
+.item3 {
+  grid-area: 8 / 1 / span 4 / span 5;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr); }
+  .item3 .pic {
+    grid-area: 2 / 1 / span 2 / span 4;
+    background-image: url("https://images.unsplash.com/photo-1496345875659-11f7dd282d1d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0f994eef47e5fb1a67849703cc961b3&auto=format&fit=crop&w=2100&q=80");
+    background-size: cover;
+    background-position: center; }
+  .item3 .block {
+    grid-area: 2 / 3 / span 2 / span 2;
+    width: 240px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 50px; }
+  .item3 .block-s {
+    grid-area: 1 / 1 / span 2 / span 2;
+    width: 240px;
+    height: 200px;
+    top: 50px; }
+  .item3 .subtitle {
+    width: 336px;
+    height: 48px;
+    grid-area: 1 / 1 / span 1 / span 4;
+    justify-self: end;
+    align-self: end; }
+    .item3 .subtitle:before {
+      content: "SUPER SKINNY";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: rgba(0, 0, 0, 0.3);
+      height: 21px;
+      overflow: hidden;
+      z-index: -1;
+      top: -16px; }
+    .item3 .subtitle:after {
+      content: "SUPER SKINNY";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: rgba(0, 0, 0, 0.1);
+      height: 14px;
+      overflow: hidden;
+      z-index: -1;
+      top: -25px; }
+  .item3 .num {
+    grid-area: 4 / 5 / span 1 / span 1; }
+  .item3 .mens-title {
+    grid-area: 4 / 1 / span 1 / span 2;
+    justify-self: end; }
+
+.item4 {
+  grid-area: 8 / span 4 / span 5 / -1;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr); }
+  .item4 .pic {
+    grid-area: 2 / span 2 / span 4 / -1;
+    background-image: url("https://images.unsplash.com/photo-1484516758160-69878111a911?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=39466d66952b133d5a5cff642b970d05&auto=format&fit=crop&w=987&q=80");
+    background-size: cover;
+    background-position: center; }
+  .item4 .block {
+    width: 240px;
+    height: 200px;
+    grid-area: 1 / 2 / span 2 / span 3;
+    justify-self: center; }
+  .item4 .pattern {
+    width: 240px;
+    height: 100px;
+    grid-area: 5 / span 2 / span 1 / -1;
+    margin-top: 50px; }
+  .item4 .subtitle {
+    width: 149px;
+    height: 48px;
+    grid-area: 2 / span 1 / span 1 / -2;
+    transform-origin: 100% 100%;
+    transform: translate(-100%, -100%) rotate(-90deg); }
+    .item4 .subtitle:before {
+      content: "DENIM";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: rgba(0, 0, 0, 0.3);
+      height: 21px;
+      overflow: hidden;
+      z-index: -1;
+      top: -16px; }
+    .item4 .subtitle:after {
+      content: "DENIM";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: rgba(0, 0, 0, 0.1);
+      height: 14px;
+      overflow: hidden;
+      z-index: -1;
+      top: -25px; }
+  .item4 .num {
+    grid-area: 5 / 2 / span 1 / span 1;
+    justify-self: end;
+    align-self: end; }
+  .item4 .mens-title {
+    width: 136px;
+    height: 28px;
+    grid-area: 1 / -2 / span 1 / span 2;
+    transform: rotate(90deg) translateX(-50%);
+    justify-self: center;
+    align-self: end; }
+
+.item5 {
+  grid-area: 12 / 1 / span 4 / span 4;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr); }
+  .item5 .pic {
+    grid-area: 2 / span 2 / span 2 / -1;
+    transform: scaleX(-1);
+    z-index: -2;
+    background-image: url("https://images.unsplash.com/photo-1525448198276-222de3961638?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=43fb25556cdbd191e520c7f28739e40d&auto=format&fit=crop&w=3300&q=80");
+    background-size: cover;
+    background-position: center; }
+  .item5 .block {
+    width: 240px;
+    height: 100px;
+    grid-area: 3 / span 2 / span 2 / -2;
+    align-self: center;
+    z-index: -3; }
+  .item5 .pattern {
+    width: 240px;
+    height: 100px;
+    grid-area: 1 / 1 / span 2 / span 3;
+    align-self: center;
+    justify-self: center;
+    z-index: -2; }
+  .item5 .subtitle {
+    width: 327px;
+    height: 48px;
+    grid-area: 2 / 1 / span 1 / span 1;
+    align-self: end; }
+    .item5 .subtitle:before {
+      content: "SWEATSHIRTS";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: rgba(0, 0, 0, 0.3);
+      height: 21px;
+      overflow: hidden;
+      z-index: -1;
+      top: -16px; }
+    .item5 .subtitle:after {
+      content: "SWEATSHIRTS";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: rgba(0, 0, 0, 0.1);
+      height: 14px;
+      overflow: hidden;
+      z-index: -1;
+      top: -25px; }
+  .item5 .num {
+    grid-area: 3 / 2 / span 1 / span 1;
+    align-self: end; }
+  .item5 .mens-title {
+    width: 130px;
+    height: 28px;
+    grid-area: 2 / -1 / span 1 / span 1;
+    margin-left: 3px; }
+
+.item6 {
+  grid-area: 14 / 4 / span 6 / span 5;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr); }
+  .item6 .pic {
+    grid-area: 2 / span 4 / span 4 / -1;
+    background-image: url("https://images.unsplash.com/photo-1519406709381-c1f293304b28?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=98c497a29f229085d9574ee8b6eeef8c&auto=format&fit=crop&w=3334&q=80");
+    background-size: cover;
+    background-position: center; }
+  .item6 .block {
+    width: 480px;
+    height: 200px;
+    grid-area: 4 / 2 / span 3 / span 4;
+    align-self: center; }
+  .item6 .block-s {
+    width: 240px;
+    height: 200px;
+    grid-area: 4 / 1 / span 2 / span 3;
+    justify-self: center; }
+  .item6 .subtitle {
+    width: 359px;
+    height: 48px;
+    grid-area: 1 / 3 / span 1 / span 3;
+    align-self: end; }
+    .item6 .subtitle:before {
+      content: "VINTAGE DENIM";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: rgba(0, 0, 0, 0.3);
+      height: 21px;
+      overflow: hidden;
+      z-index: -1;
+      top: -16px; }
+    .item6 .subtitle:after {
+      content: "VINTAGE DENIM";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: rgba(0, 0, 0, 0.1);
+      height: 14px;
+      overflow: hidden;
+      z-index: -1;
+      top: -25px; }
+  .item6 .num {
+    grid-area: 3 / span 1 / span 1 / 2;
+    align-self: end;
+    justify-self: end; }
+  .item6 .mens-title {
+    width: 140px;
+    height: 28px;
+    grid-area: -2 / span 4 / span 1 / -1;
+    justify-self: center; }
+
+.item7 {
+  grid-area: span 5 / 1 / -1 / span 3;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr); }
+  .item7 .pic {
+    grid-area: span 4 / 1 / -1 / span 2;
+    background-image: url("https://images.unsplash.com/photo-1516914943479-89db7d9ae7f2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=63ff45d79414b3166b08b800a32018be&auto=format&fit=crop&w=3668&q=80");
+    background-size: cover;
+    background-position: center; }
+  .item7 .block {
+    width: 240px;
+    height: 400px;
+    grid-area: 1 / 1 / span 5 / span 3;
+    justify-self: center;
+    align-self: center; }
+  .item7 .block-s {
+    width: 240px;
+    height: 200px;
+    grid-area: span 2 / span 1 / -1 / -2; }
+  .item7 .mens-title {
+    width: 127px;
+    height: 28px;
+    grid-area: 1 / 1 / span 1 / span 1;
+    align-self: end; }
+  .item7 .num {
+    grid-area: span 1 / -2 / -1 / -1;
+    align-self: end;
+    justify-self: end; }
+  .item7 .subtitle {
+    grid-area: 1/ 3 /span 1 /span 2;
+    width: 184px;
+    height: 48px;
+    align-self: end;
+    transform-origin: 0% 100%;
+    transform: rotate(90deg); }
+    .item7 .subtitle:before {
+      content: "EDITION";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: rgba(0, 0, 0, 0.3);
+      height: 21px;
+      overflow: hidden;
+      z-index: -1;
+      top: -16px; }
+    .item7 .subtitle:after {
+      content: "EDITION";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: rgba(0, 0, 0, 0.1);
+      height: 14px;
+      overflow: hidden;
+      z-index: -1;
+      top: -25px; }
